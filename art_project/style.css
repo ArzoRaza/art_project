@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,600&display=swap');
+/* "Open Sans", sans-serif; */
+
+/* Resets */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #79ff6c;
+    margin: 1rem;
+}
+.wrapper-container{
+    background-color: rgb(140, 149, 141);
+    border-radius: 15px;
+}
+
+
+html{
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Nav Start */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 5rem;
+}
+
+nav ul {
+    margin-left: 5rem;
+    list-style: none;
+}
+
+li img {
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    object-fit: fill;
+    border: 2px solid #79ff6c;
+    
+    cursor: pointer;
+}
+
+nav .burger {
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+nav .burger span {
+    height: 4px;
+    color: #79ff6c;
+    border: 2px solid rgb(2, 1, 2);
+    margin: 4px;
+    padding: 5px;
+    font-size: 20px;
+    font-style: none;
+    border: none;
+    border-radius: 20px;
+    background: rgb(96, 83, 83);
+}
+.srch {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 40%;
+    border: 2px solid rgb(0, 0, 0);
+    color: #79ff6c;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    padding: 0.2rem;
+    width: 300px;
+    cursor: pointer;
+}
+
+#icon {
+    justify-content: space-between;
+    align-items: flex-end;
+    position: absolute;
+    color: #79ff6c;
+    right: 7%;
+    top: 7px;
+
+}
+/* nav end  */
+
+/* Header Start */
+header {
+    margin: 6rem;
+}
+
+.main-headings {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-top: 10rem;
+    font-size: 4rem;
+    font-weight: 900;
+    /* background: grey; */
+}
+
+.primary-headings {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    line-height: 35px
+}
+
+.bg-gray {
+    /* background: rgb(140, 149, 141); */
+    color: white;
+    padding: 2px 10px;
+    font-weight: bold;
+}
+/* Header End */
+
+/* Main Start */
+main {
+    margin: 0 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px;
+}
+
+main .imgs {
+    width: 18%;
+    margin: 10px;   
+    object-fit: cover; 
+    border-radius: 15px;
+
+}
+/* Main End */
+
+
+/* Section Three start */
+.section-three{
+    margin-left: 5rem;
+}
+
+.section-three .primary-headings {
+    margin-bottom: 10rem;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.item h1 {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.section-three img {
+    width: 300px;
+    height: 450px;
+    margin: 10px;
+    border-radius: 15px;
+    
+}
+
+
+/* Section three end */
+
+
+/* Footer start*/
+footer {
+    margin-top: 10rem;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background: rgb(68, 88, 90);
+}
+
+footer .logo-container img {
+    font-size: 1rem;
+    width: 150px;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 2px solid #79ff6c;
+    cursor: pointer;
+
+}
+
+footer .logo-container p {
+    max-width: 400px;
+    font-family: sans-serif;
+    line-height: 25px;
+}
+
+footer .about-conmpany {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .about-conmpany .container {
+    margin-right: 40px;
+    margin-top: 20xp;
+} 
+
+.about-conmpany .container h1 {
+    margin-bottom: 50px;
+}
+
+.about-conmpany .container p {
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+/* Project End  */
+
+
+/* Responsive Start here */
+@media screen and (max-width: 740px ) {
+    header .main-heading {
+        width: 100%;
+    }
+    header .primary-headings{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .section-three .main-heading{
+        width: 100%;
+    }
+    .section-three .primary-headings{
+        width: 100%;
+        font-size: 1.5rem;
+
+    }
+    .section-three img{
+        margin: 0;
+    }
+}
